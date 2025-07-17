@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func Greet() string {
+func Do() string {
 	var current_hour int = time.Now().Hour()
 	if (current_hour >= 4) && (current_hour < 10) {
 		return "おはよう"
@@ -18,6 +18,5 @@ func Greet() string {
 }
 
 func main() {
-	fmt.Println(Greet())
+	fmt.Println(Do())
 }
-// Another test
