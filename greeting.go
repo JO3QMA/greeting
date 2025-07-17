@@ -1,10 +1,11 @@
-package main
+package greeting
 
 import (
+	"fmt"
 	"time"
 )
 
-func Greet() string {
+func Do() string {
 	var current_hour int = time.Now().Hour()
 	if (current_hour >= 4) && (current_hour < 10) {
 		return "おはよう"
@@ -14,4 +15,8 @@ func Greet() string {
 		return "こんばんは"
 	}
 	return ""
+}
+
+func main() {
+	fmt.Println(Do())
 }
