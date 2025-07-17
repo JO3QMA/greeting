@@ -1,7 +1,6 @@
 package greeting
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -15,8 +14,4 @@ func Do() string {
 		return "こんばんは"
 	}
 	return ""
-}
-
-func main() {
-	fmt.Println(Do())
 }
